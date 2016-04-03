@@ -1,0 +1,17 @@
+﻿<Window x:Class="MaterialColors.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaterialColors"
+        mc:Ignorable="d"
+        Title="About Material Colors" Height="300" Width="350" WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Background="#616161" Icon="Material Colors.ico">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Image Source="Material Colors.ico" Width="48" Height="48"/>
+        <TextBlock Foreground="White" FontSize="11" Text="Version 1.0" HorizontalAlignment="Center"/>
+        <TextBlock Tag="0" Foreground="White" FontSize="11" Text="by Amit Jayant" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
+        <TextBlock Tag="1" Foreground="White" FontSize="11" Text="Source Code on Github" HorizontalAlignment="Center" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
+        <TextBlock Tag="2" Foreground="White" FontSize="11" Text="Design inpired by Roman Nurik's Material Colors App for Mac" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
+    </StackPanel>
+</Window>
