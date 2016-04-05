@@ -13,7 +13,7 @@ namespace MaterialColors
     {
         Grid grid;
         Rectangle rectangle;
-        Label labelHex;
+        Label labelColorNum, labelHex;
 
         public MainWindow()
         {
@@ -95,11 +95,29 @@ namespace MaterialColors
                 colorHex = MaterialColorsEngine.getMaterialColor(btn.Tag, i);
                 grid = (Grid)VisualTreeHelper.GetChild(swatchesButton[i], 0);
                 rectangle = (Rectangle)VisualTreeHelper.GetChild(grid, 0);
+                labelColorNum = (Label)VisualTreeHelper.GetChild(grid, 1);
                 labelHex = (Label)VisualTreeHelper.GetChild(grid, 2);
 
-                rectangle.Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString(colorHex));
+                // Set content
                 labelHex.Content = colorHex;
+
+                // Calculate readable color value
+                Color backColor = (Color)ColorConverter.ConvertFromString(colorHex);
+                Color foreColor = (perceivedBrightness(backColor) > 130 ? Colors.Black : Colors.White);
+
+                // Set colors
+                rectangle.Fill = new SolidColorBrush((Color)ColorConverter.ConvertFromString(colorHex));
+                labelColorNum.Foreground = new SolidColorBrush(foreColor);
+                labelHex.Foreground = new SolidColorBrush(foreColor);
             }
+        }
+
+        private int perceivedBrightness(Color c)
+        {
+            return (int)Math.Sqrt(
+            c.R * c.R * .299 +
+            c.G * c.G * .587 +
+            c.B * c.B * .114);
         }
     }
 }

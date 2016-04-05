@@ -5,13 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MaterialColors"
         mc:Ignorable="d"
-        Title="About Material Colors" Height="300" Width="350" WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
-        Background="#616161" Icon="Material Colors.ico">
+        Title="About Material Colors" Height="300" Width="350" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" Background="WhiteSmoke" Icon="Resources/icon.ico">
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-        <Image Source="Material Colors.ico" Width="48" Height="48"/>
-        <TextBlock Foreground="White" FontSize="11" Text="Version 1.0" HorizontalAlignment="Center"/>
-        <TextBlock Tag="0" Foreground="White" FontSize="11" Text="by Amit Jayant" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
-        <TextBlock Tag="1" Foreground="White" FontSize="11" Text="Source Code on Github" HorizontalAlignment="Center" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
-        <TextBlock Tag="2" Foreground="White" FontSize="11" Text="Design inpired by Roman Nurik's Material Colors App for Mac" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
+        <Image Source="/Resources/MaterialColors.png" Width="128" Height="128"/>
+        <TextBlock FontSize="11" Text="Version 1.0.1" HorizontalAlignment="Center"/>
+        <TextBlock Tag="0" FontSize="11" Text="by Amit Jayant" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
+        <TextBlock Tag="1" FontSize="11" Text="Source Code on Github" HorizontalAlignment="Center" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
+        <TextBlock Tag="2" FontSize="11" Text="Design inpired by Roman Nurik's Material Colors App for Mac" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
     </StackPanel>
 </Window>
