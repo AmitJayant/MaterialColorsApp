@@ -5,4 +5,6 @@ App design is inspired by Roman Nurik's <a href="https://github.com/romannurik/M
 <br><br>
 <img src="http://www.codeswitch.in/images/MaterialColors.PNG"/>
 <br><br>
-<a href="https://github.com/AmJay/MaterialColorsApp/releases/download/v1.0/MaterialColors_setup.exe"><strong>Download the app</strong></a>
+Prerequisites: .NET Framework 4.5.2
+<br><br>
+<a href="https://github.com/AmJay/MaterialColorsApp/releases/download/v1.0.1/MaterialColors_setup.exe"><strong>Download the app</strong></a>
