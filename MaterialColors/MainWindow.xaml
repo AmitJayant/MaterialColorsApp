@@ -206,8 +206,13 @@
                 <Button Grid.Row="1" x:Name="btn50" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="0" Fill="#FFEBEE" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="0" Fill="#FFEBEE" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="50" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#FFEBEE" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -217,8 +222,13 @@
                 <Button Grid.Row="2" x:Name="btn100" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="1" Fill="#FFCDD2" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="1" Fill="#FFCDD2" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="100" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#FFCDD2" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -228,8 +238,13 @@
                 <Button Grid.Row="3" x:Name="btn200" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="2" Fill="#EF9A9A" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="2" Fill="#EF9A9A" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="200" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#EF9A9A" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -239,8 +254,13 @@
                 <Button Grid.Row="4" x:Name="btn300" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="3" Fill="#E57373" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="3" Fill="#E57373" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="300" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#E57373" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -250,8 +270,13 @@
                 <Button Grid.Row="5" x:Name="btn400" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="4" Fill="#EF5350" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="4" Fill="#EF5350" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="400" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#EF5350" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -261,8 +286,13 @@
                 <Button Grid.Row="6" x:Name="btn500" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="5" Fill="#F44336" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="5" Fill="#F44336" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="500" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#F44336" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -272,8 +302,13 @@
                 <Button Grid.Row="7" x:Name="btn600" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="6" Fill="#E53935" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="6" Fill="#E53935" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="600" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#E53935" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -283,8 +318,13 @@
                 <Button Grid.Row="8" x:Name="btn700" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="7" Fill="#D32F2F" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="7" Fill="#D32F2F" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="700" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#D32F2F" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -294,8 +334,13 @@
                 <Button Grid.Row="9" x:Name="btn800" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="8" Fill="#C62828" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="8" Fill="#C62828" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="800" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#C62828" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -305,8 +350,13 @@
                 <Button Grid.Row="10" x:Name="btn900" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="9" Fill="#B71C1C" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="9" Fill="#B71C1C" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="900" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#B71C1C" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -316,8 +366,13 @@
                 <Button Grid.Row="11" x:Name="btnA100" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="10" Fill="#FF8A80" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="10" Fill="#FF8A80" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="A100" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#FF8A80" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -327,8 +382,13 @@
                 <Button Grid.Row="12" x:Name="btnA200" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="11" Fill="#FF5252" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="11" Fill="#FF5252" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="A200" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#FF5252" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -338,8 +398,13 @@
                 <Button Grid.Row="13" x:Name="btnA400" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="12" Fill="#FF1744" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="12" Fill="#FF1744" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="A400" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#FF1744" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>
@@ -349,8 +414,13 @@
                 <Button Grid.Row="14" x:Name="btnA700" Margin="8,2,24,2" Click="ColorSwatch_ButtonClick">
                     <Button.Template>
                         <ControlTemplate>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="Button.IsPressed" Value="True">
+                                    <Setter Property="Opacity" Value="0.5" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
                             <Grid>
-                                <Rectangle Tag="13" Fill="#D50000" Stroke="Gray" Cursor="Hand" />
+                                <Rectangle Tag="13" Fill="#D50000" Stroke="Gray" StrokeThickness="0.2" Cursor="Hand" />
                                 <Label Content="A700" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Cursor="Hand"/>
                                 <Label Content="#D50000" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Cursor="Hand"/>
                             </Grid>

@@ -35,6 +35,7 @@ namespace MaterialColors
 
         private void ColorSwatch_ButtonClick(object sender, RoutedEventArgs e)
         {
+            // Copy color hex to clipboard
             grid = (Grid)VisualTreeHelper.GetChild((Button)sender, 0);
             Label labelHex = (Label)VisualTreeHelper.GetChild(grid, 2);
             Clipboard.SetText(labelHex.Content.ToString());
@@ -42,6 +43,7 @@ namespace MaterialColors
 
         private void labelAbout_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            // Show about dialog
             About about = new About();
             about.Owner = Window.GetWindow(this);
             about.ShowDialog();
