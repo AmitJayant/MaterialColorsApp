@@ -22,5 +22,17 @@ namespace MaterialColors.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("true")]
+        public string IncludeHash {
+            get {
+                return ((string)(this["IncludeHash"]));
+            }
+            set {
+                this["IncludeHash"] = value;
+            }
+        }
     }
 }

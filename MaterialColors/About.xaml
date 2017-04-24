@@ -8,7 +8,7 @@
         Title="About Material Colors" Height="300" Width="350" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" Background="WhiteSmoke" Icon="Resources/icon.ico">
     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
         <Image Source="/Resources/MaterialColors.png" Width="128" Height="128"/>
-        <TextBlock FontSize="11" Text="Version 1.0.2" HorizontalAlignment="Center"/>
+        <TextBlock FontSize="11" Text="Version 1.1" HorizontalAlignment="Center"/>
         <TextBlock Tag="0" FontSize="11" Text="by Amit Jayant" HorizontalAlignment="Center" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
         <TextBlock Tag="1" FontSize="11" Text="Source Code on Github" HorizontalAlignment="Center" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
         <TextBlock Tag="2" FontSize="11" Text="Design inpired by Roman Nurik's Material Colors App for Mac" Margin="0,16,0,0" MouseDown="TextBlock_MouseDown" Cursor="Hand"/>
