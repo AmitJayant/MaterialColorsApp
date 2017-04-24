@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Material Colors"
         Height="600" Width="300"        
-        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Resources/icon.ico">
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Resources/icon.ico" Loaded="Window_Loaded">
 
     <StackPanel Background="WhiteSmoke">
         <Grid Height="530">
@@ -431,7 +431,10 @@
         </Grid>
 
         <Separator Background="LightGray" />
-        <Label Name="labelAbout" Content="About Material Colors" FontSize="10" HorizontalAlignment="Right" VerticalAlignment="Top" Cursor="Hand" MouseDown="labelAbout_MouseDown"/>
+        <Grid>
+            <CheckBox Name="chkHash" Content="Include Hash '#'" Margin="10,4,0,0" Click="chkHash_Click" />
+            <Label Name="labelAbout" Content="About Material Colors" FontSize="10" HorizontalAlignment="Right" VerticalAlignment="Top" Cursor="Hand" MouseDown="labelAbout_MouseDown"/>
+        </Grid>
     </StackPanel>
 
 </Window>

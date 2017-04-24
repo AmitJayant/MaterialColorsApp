@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using MaterialColors.Properties;
 
 namespace MaterialColors
 {
@@ -14,6 +15,7 @@ namespace MaterialColors
         Grid grid;
         Rectangle rectangle;
         Label labelColorNum, labelHex;
+        String includeHash;
 
         public MainWindow()
         {
@@ -21,6 +23,20 @@ namespace MaterialColors
         }
 
         // Events /////////////////////////////////////////////////////////////
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Read from settings and set checkbox
+            includeHash = Settings.Default["IncludeHash"].ToString();
+            if (includeHash.Equals("true"))
+            {
+                chkHash.IsChecked = true;
+            }
+            else
+            {
+                chkHash.IsChecked = false;
+            }
+        }
+
         private void ColorGroup_ButtonClick(object sender, RoutedEventArgs e)
         {
             setDefaultStates();
@@ -38,7 +54,15 @@ namespace MaterialColors
             // Copy color hex to clipboard
             grid = (Grid)VisualTreeHelper.GetChild((Button)sender, 0);
             Label labelHex = (Label)VisualTreeHelper.GetChild(grid, 2);
-            Clipboard.SetText(labelHex.Content.ToString());
+
+            if (includeHash.Equals("true"))
+            {
+                Clipboard.SetText(labelHex.Content.ToString());
+            }
+            else
+            {
+                Clipboard.SetText(labelHex.Content.ToString().Replace("#", ""));
+            }
         }
 
         private void labelAbout_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -47,6 +71,21 @@ namespace MaterialColors
             About about = new About();
             about.Owner = Window.GetWindow(this);
             about.ShowDialog();
+        }        
+
+        private void chkHash_Click(object sender, RoutedEventArgs e)
+        {
+            if (chkHash.IsChecked == true)
+            {
+                Settings.Default["IncludeHash"] = "true";
+                includeHash = "true";
+            }
+            else
+            {
+                Settings.Default["IncludeHash"] = "false";
+                includeHash = "false";
+            }
+            Settings.Default.Save();
         }
 
         // Methods ////////////////////////////////////////////////////////////
